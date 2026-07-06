@@ -204,3 +204,12 @@ a.logo {
 a.logo:hover {
     border-bottom: none !important;
 }
+/* Quitar cualquier tipo de línea inferior del enlace que contiene al logo */
+.header .logo, 
+.header a:has(img),
+a.logo {
+    border-bottom: none !important;
+    text-decoration: none !important; /* Por si es un subrayado nativo de enlace */
+    box-shadow: none !important;      /* Por si la línea es una sombra inferior */
+}
+
