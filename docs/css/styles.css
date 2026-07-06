@@ -98,7 +98,6 @@ a:hover{
     justify-content:space-between;
     align-items:center;
     padding:28px 36px;
-    border-bottom:1px solid var(--border);
     background:var(--bg);
 }
 
@@ -192,4 +191,16 @@ footer{
     .container.narrow{
         max-width:100%;
     }
+}
+/* Quitar la línea inferior del enlace que contiene al logo */
+.header .logo, 
+.header a:has(img),
+a.logo {
+    border-bottom: none !important;
+}
+
+.header .logo:hover, 
+.header a:has(img):hover,
+a.logo:hover {
+    border-bottom: none !important;
 }
