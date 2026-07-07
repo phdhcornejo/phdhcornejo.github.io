@@ -10,7 +10,77 @@
 
     <meta name="description" content="Books by PhD. Hernán Cornejo on strategy, artificial intelligence, organizational change, innovation and complexity in modern management.">
 
+    <!-- Fuentes oficiales para consistencia editorial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Inyección de la paleta premium oscura en el documento */
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #141414;
+            --text: #f5f5f5;
+            --text-soft: #b0b0b0;
+            --muted: #6a6a6a;
+            --border: #1a1a1a;
+            --accent: #c9a962;
+            --accent-light: #d4b978;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        /* Estilos de soporte para asegurar consistencia */
+        h1, h2 {
+            color: var(--text);
+        }
+
+        /* Tratamiento sutil para los metadatos de los libros (Año y formato) */
+        h2 + p {
+            color: var(--accent) !important;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            margin-top: -4px;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        p {
+            color: var(--text-soft);
+        }
+
+        .section-number {
+            color: var(--accent) !important; /* Resalta en dorado la cabecera "BOOKS" */
+        }
+
+        a {
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            transition: color 0.3s ease, border-bottom-color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .header nav a {
+            color: var(--text-soft);
+        }
+
+        .header nav a:hover {
+            color: var(--accent);
+        }
+
+        footer p {
+            color: var(--muted);
+        }
+    </style>
 
 </head>
 
@@ -104,7 +174,7 @@
             <p>2024 · eBook</p>
             <p>
                 Analyzes decentralized organizational models and their impact on the
-                emerging digital economy.
+                closing digital economy.
             </p>
 
             <!-- =========================
