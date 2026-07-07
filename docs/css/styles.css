@@ -1,6 +1,6 @@
 /* ================================
    CORNEJO / ONE — DESIGN SYSTEM v4
-   Editorial Heritage
+   Editorial Heritage (Dark Mode Opt)
 ================================ */
 
 /* RESET */
@@ -55,7 +55,7 @@ h1{
     font-size:4.25rem;
     line-height:1.05;
     letter-spacing:-0.03em;
-    color:#2A2623;
+    color:var(--text); /* CORREGIDO: Ahora cambia automáticamente a blanco/gris claro */
     margin:18px 0 18px;
 }
 
@@ -77,14 +77,14 @@ p{
     font-size:.75rem;
     letter-spacing:.22em;
     text-transform:uppercase;
-    color:#8C8478;
+    color:var(--accent); /* OPTIMIZADO: El indicador pasa a dorado premium sobre fondo oscuro */
     margin-bottom:22px;
 }
 
 a{
     color:var(--text);
     text-decoration:none;
-    border-bottom:1px solid #C7BFB4;
+    border-bottom:1px solid var(--border); /* CORREGIDO: El borde inferior ahora es oscuro y sutil */
     transition:.25s ease;
 }
 
@@ -118,7 +118,7 @@ a:hover{
 
 .header nav a{
     border:none;
-    color:#555;
+    color:var(--text-soft); /* CORREGIDO: Los menús cambian a gris claro para ser legibles */
     font-size:.82rem;
     font-weight:500;
     letter-spacing:.12em;
@@ -126,7 +126,7 @@ a:hover{
 }
 
 .header nav a:hover{
-    color:var(--text);
+    color:var(--accent); /* OPTIMIZADO: Al pasar el cursor por el menú se ilumina en dorado */
 }
 
 /* HERO */
@@ -137,7 +137,7 @@ a:hover{
 
 .hero-subtitle{
     font-size:1.18rem;
-    color:#555;
+    color:var(--text-soft); /* CORREGIDO: Subtítulos del home legibles en modo oscuro */
     max-width:720px;
     margin-bottom:18px;
 }
@@ -154,7 +154,7 @@ footer{
     border-top:1px solid var(--border);
     padding:60px 0;
     text-align:center;
-    color:#777;
+    color:var(--muted); /* CORREGIDO: Texto de copyright adaptado a la paleta */
     font-size:.85rem;
 }
 
@@ -194,11 +194,14 @@ footer{
         max-width:100%;
     }
 }
-/* Quitar la línea inferior del enlace que contiene al logo */
+
+/* LOGO FIXES */
 .header .logo, 
 .header a:has(img),
 a.logo {
     border-bottom: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
 }
 
 .header .logo:hover, 
@@ -206,12 +209,3 @@ a.logo {
 a.logo:hover {
     border-bottom: none !important;
 }
-/* Quitar cualquier tipo de línea inferior del enlace que contiene al logo */
-.header .logo, 
-.header a:has(img),
-a.logo {
-    border-bottom: none !important;
-    text-decoration: none !important; /* Por si es un subrayado nativo de enlace */
-    box-shadow: none !important;      /* Por si la línea es una sombra inferior */
-}
-
