@@ -6,19 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dr. Hernán Cornejo</title>
-    <!-- Etiquetas de idioma para SEO (Hreflang) -->
     <link rel="alternate" hreflang="es" href="https://phdhcornejo.github.io/web/es/" />
     <link rel="alternate" hreflang="en" href="https://phdhcornejo.github.io/web/en/" />
     <link rel="alternate" hreflang="x-default" href="https://phdhcornejo.github.io/web/" />
 
     <meta name="description" content="Dr. Hernán Cornejo - Estrategia, gestión del cambio, innovación y liderazgo en entornos complejos.">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Inyección de la paleta premium oscura en el documento */
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #141414;
+            --text: #f5f5f5;
+            --text-soft: #b0b0b0;
+            --muted: #6a6a6a;
+            --border: #1a1a1a;
+            --accent: #c9a962;
+            --accent-light: #d4b978;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        /* Estilos específicos para asegurar consistencia si el CSS externo tarda en cargar */
+        h1, h2 {
+            color: var(--text);
+        }
+
+        p {
+            color: var(--text-soft);
+        }
+
+        .section-number {
+            color: var(--accent) !important; /* Resalta en dorado la cabecera superior */
+        }
+
+        a {
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            transition: color 0.3s ease, border-bottom-color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .header nav a {
+            color: var(--text-soft);
+        }
+
+        .header nav a:hover {
+            color: var(--accent);
+        }
+
+        footer p {
+            color: var(--muted);
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header class="header">
 
         <div class="logo">
@@ -43,18 +100,18 @@
 
     </header>
 
-    <!-- HERO -->
     <main class="hero">
 
         <div class="container narrow">
 
-            <span class="section-number">STRATEGY · CHANGE · COMPLEXITY</span>
+            <span class="section-number">STRATEGY · CHANGE · COMPLEXITY · TECHNOLOGY </span>
 
             <h1>Dr. Hernán Cornejo</h1>
 
             <p class="hero-subtitle">
                 Estratega organizacional, investigador y autor enfocado en la transformación, 
                 la innovación y el liderazgo en entornos complejos.
+            </p>
 
             <p>
                 Su trabajo integra la gestión estratégica, la teoría del cambio y las tecnologías emergentes 
@@ -65,7 +122,6 @@
 
     </main>
 
-    <!-- SECTIONS -->
     <section class="section">
 
         <div class="container narrow">
@@ -86,7 +142,6 @@
 
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Dr. Hernán Cornejo</p>
     </footer>

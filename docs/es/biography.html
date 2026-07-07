@@ -10,7 +10,69 @@
 
     <meta name="description" content="Biografía del Dr. Hernán Cornejo, profesor universitario, investigador y consultor internacional especializado en estrategia, innovación y gestión del cambio.">
 
+    <!-- Fuentes oficiales para consistencia editorial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Inyección de la paleta premium oscura en el documento */
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #141414;
+            --text: #f5f5f5;
+            --text-soft: #b0b0b0;
+            --muted: #6a6a6a;
+            --border: #1a1a1a;
+            --accent: #c9a962;
+            --accent-light: #d4b978;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        /* Estilos de soporte para asegurar consistencia */
+        h1, h2 {
+            color: var(--text);
+        }
+
+        p {
+            color: var(--text-soft);
+        }
+
+        .section-number {
+            color: var(--accent) !important; /* Resalta en dorado la cabecera "BIOGRAFÍA" */
+        }
+
+        a {
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            transition: color 0.3s ease, border-bottom-color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .header nav a {
+            color: var(--text-soft);
+            border-bottom: 1px solid transparent;
+        }
+
+        .header nav a:hover {
+            color: var(--accent);
+            border-bottom-color: transparent;
+        }
+
+        footer p {
+            color: var(--muted);
+        }
+    </style>
 
 </head>
 

@@ -10,7 +10,80 @@
 
     <meta name="description" content="Catálogo completo de libros del Dr. Hernán Cornejo sobre estrategia, inteligencia artificial, liderazgo, cambio organizacional y complejidad.">
 
+    <!-- Fuentes oficiales para consistencia editorial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Inyección de la paleta premium oscura en el documento */
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #141414;
+            --text: #f5f5f5;
+            --text-soft: #b0b0b0;
+            --muted: #6a6a6a;
+            --border: #1a1a1a;
+            --accent: #c9a962;
+            --accent-light: #d4b978;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        /* Estilos de soporte para asegurar consistencia */
+        h1, h2 {
+            color: var(--text);
+        }
+
+        /* Resaltado premium para los títulos de los libros individuales */
+        main h2 {
+            font-family: 'Cormorant+Garamond', serif;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            color: var(--text-soft);
+        }
+
+        /* Formato sutil para la etiqueta de formato/año (e.g., 2025 · eBook) */
+        main h2 + p {
+            color: var(--accent);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-number {
+            color: var(--accent) !important; /* Resalta en dorado la cabecera "LIBROS" */
+        }
+
+        /* Enlaces de navegación */
+        .header nav a {
+            color: var(--text-soft);
+            border-bottom: 1px solid transparent;
+            transition: color 0.3s ease;
+        }
+
+        .header nav a:hover {
+            color: var(--accent);
+        }
+
+        footer p {
+            color: var(--muted);
+        }
+    </style>
 
 </head>
 
@@ -64,7 +137,7 @@
             </p>
 
             <!-- =========================
-                 LIBROS REALES
+                 CATÁLOGO DE LIBROS
             ========================== -->
 
             <h2>Hypercompetition 4.0: Strategies for a World of Nationalism, Big Tech, and Artificial Intelligence</h2>
@@ -97,7 +170,7 @@
 
             <h2>Success in Decision-Making: How Your Personality Affects Your Small Business?</h2>
             <p>2024 · eBook</p>
-            <p>Explora la influencia de la personalidad en la toma de decisiones empresariales.</p>
+            <p>Explora la influencia de la personalidad en la toma de decisiones evasivas empresariales.</p>
 
             <h2>The Change Strategist: Designing the Future of Business</h2>
             <p>2024 · eBook</p>
