@@ -111,7 +111,7 @@ a:hover {
 }
 .logo img {
     display: block;
-    width: 120px;       /* Fuerza el ancho exacto del logo */
+    width: 280px;       /* Fuerza el ancho exacto del logo */
     height: 120px;      /* Fuerza el alto exacto del logo */
     object-fit: contain;/* Asegura que no se deforme ni se estire */
 
