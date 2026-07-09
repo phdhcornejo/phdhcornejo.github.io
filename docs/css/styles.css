@@ -111,8 +111,10 @@ a:hover {
 }
 .logo img {
     display: block;
-    filter: invert(1);          /* Convierte el fondo blanco en negro y las líneas oscuras en claras */
-    mix-blend-mode: screen;     /* Sincroniza y fusiona perfectamente cualquier residuo claro con el fondo oscuro */
+    width: 120px;       /* Fuerza el ancho exacto del logo */
+    height: 120px;      /* Fuerza el alto exacto del logo */
+    object-fit: contain;/* Asegura que no se deforme ni se estire */
+
 }
 
 .header nav ul {
