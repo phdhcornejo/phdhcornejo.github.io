@@ -1,5 +1,8 @@
+# robots.txt
+# Official website of Dr. Hernán Cornejo
+
 User-agent: *
 
 Allow: /
 
-Sitemap: https://phdhcornejo.github.io/web/sitemap.xml
+Sitemap: https://phdhcornejo.github.io/sitemap.xml
