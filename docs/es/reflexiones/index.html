@@ -17,24 +17,65 @@
 
     <link rel="stylesheet" href="../../css/styles.css">
     
-    <style>
-		.header .logo img {
-    		filter: none !important;
-   			mix-blend-mode: normal !important;
-		}
-		.header .logo img{
-    		filter:none !important;
-    		mix-blend-mode:normal !important;
-		}
+<style>
+
+	.header .logo img{
+    	filter:none !important;
+    	mix-blend-mode:normal !important;
+	}
 
 /* ===== INSIGHTS ===== */
 
-		.insights-list{
-    		display:flex;
-    		flex-direction:column;
-    		gap:60px;
-		}
-	</style>
+	.insights-list{
+    	display:flex;
+    	flex-direction:column;
+    	gap:60px;
+	}
+
+	.insight-item{
+    	display:flex;
+    	align-items:flex-start;
+    	gap:36px;
+	}
+
+	.insight-image{
+    	flex:0 0 260px;
+	}
+
+	.insight-image img{
+    	width:100%;
+    	height:auto;
+    	display:block;
+	}
+
+	.insight-content{
+    	flex:1;
+	}
+
+	.insight-content h2{
+    	margin-top:0;
+	}
+
+	.insight-read-more{
+    	display:inline-block;
+    	margin-top:18px;
+	}
+
+/* Responsive */
+
+	@media (max-width:768px){
+
+    .insight-item{
+        display:block;
+    }
+
+    .insight-image{
+        margin-bottom:24px;
+    }
+
+}
+
+</style>
 
 </head>
 
