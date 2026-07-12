@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Insights | Dr. Hernán Cornejo</title>
+
+    <meta name="description" content="Insights by Dr. Hernán Cornejo on strategy, innovation, change management, leadership and organizational transformation.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style>
+        .header .logo img {
+            filter: none !important;
+            mix-blend-mode: normal !important;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="../index.html">
+
+            <img src="../../images/untitled_2.png"
+                 alt="Dr. Hernán Cornejo"
+                 width="120"
+                 height="120">
+
+        </a>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../biography.html">Biography</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../books.html">Books</a></li>
+            <li><a href="../lectures.html">Lectures</a></li>
+            <li><a href="../consulting.html">Consulting</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+</header>
+
+
+
+<!-- =========================
+     INSIGHTS
+========================== -->
+
+
+<main class="section">
+
+
+<div class="container narrow">
+
+
+<span class="section-number">
+INSIGHTS
+</span>
+
+
+<h1>
+Ideas, research and analysis
+</h1>
+
+
+<p class="hero-subtitle">
+
+A selection of articles addressing strategy,
+innovation, change management, leadership and
+organizational transformation in complex environments.
+
+</p>
+
+
+
+<div class="insights-list">
+
+
+
+<article class="insight-item">
+
+
+<div class="insight-image">
+
+<img src="../../images/articulo1.png"
+     alt="Change management in complex organizations">
+
+</div>
+
+
+<div class="insight-content">
+
+
+<h2>
+
+<a href="change-management-complex-organizations.html">
+
+Change management in complex organizations
+
+</a>
+
+</h2>
+
+
+<p>
+
+Organizational transformation does not depend only
+on adopting technology. It requires integrating strategy,
+leadership and adaptive capabilities to build organizations
+prepared for uncertain scenarios.
+
+</p>
+
+
+<a class="insight-read-more"
+   href="change-management-complex-organizations.html">
+
+Read article →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+<article class="insight-item">
+
+
+<div class="insight-image">
+
+<img src="../../images/leadership.png"
+     alt="Adaptive leadership">
+
+</div>
+
+
+<div class="insight-content">
+
+
+<h2>
+
+<a href="adaptive-leadership.html">
+
+Adaptive leadership in uncertain environments
+
+</a>
+
+</h2>
+
+
+<p>
+
+New organizational scenarios require leaders capable
+of interpreting permanent change, managing uncertainty
+and developing collective learning processes.
+
+</p>
+
+
+<a class="insight-read-more"
+   href="adaptive-leadership.html">
+
+Read article →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+<article class="insight-item">
+
+
+<div class="insight-image">
+
+<img src="../../images/iastrategy.png"
+     alt="Artificial Intelligence and strategy">
+
+</div>
+
+
+<div class="insight-content">
+
+
+<h2>
+
+<a href="artificial-intelligence-strategy.html">
+
+Artificial Intelligence and organizational strategy
+
+</a>
+
+</h2>
+
+
+<p>
+
+Artificial Intelligence represents a strategic opportunity
+when integrated with human capabilities, organizational
+processes and a coherent transformation vision.
+
+</p>
+
+
+<a class="insight-read-more"
+   href="artificial-intelligence-strategy.html">
+
+Read article →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+</div>
+
+
+</div>
+
+
+</main>
+
+
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+
+<footer>
+
+<p>
+© 2026 Dr. Hernán Cornejo
+</p>
+
+</footer>
+
+
+
+<script src="../../js/app.js"></script>
+
+
+</body>
+
+</html>
