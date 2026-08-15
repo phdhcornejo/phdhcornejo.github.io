@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link rel="canonical" href="https://phdhcornejo.github.io/en/insights/">
+
     <link rel="stylesheet" href="../../css/styles.css">
 
     <style>
@@ -159,25 +159,24 @@ organizational transformation in complex environments.
 
 
 
-<article class="insight-item">
-
+<article class="insight-item" data-date="2026-08-15">
 
 <div class="insight-image">
 
-<img src="../../images/articulo1.png"
-     alt="Change management in complex organizations">
+<img src="../../images/artinews.png"
+     alt="Latest Global Business News">
 
 </div>
 
 
-<div class="insight-content">
+<div class="insight-content" data-date="2026-07-17">
 
 
 <h2>
 
 <a href="change-management-complex-organizations.html">
 
-Change management in complex organizations
+Latest Global Business News
 
 </a>
 
@@ -186,18 +185,19 @@ Change management in complex organizations
 
 <p>
 
-Organizational transformation does not depend only
-on adopting technology. It requires integrating strategy,
-leadership and adaptive capabilities to build organizations
-prepared for uncertain scenarios.
+Welcome to your source for the latest global business news, delivering essential insights, 
+emerging trends, market developments, and strategic perspectives shaping today’s rapidly 
+changing business world.
 
 </p>
 
 
 <a class="insight-read-more"
-   href="change-management-complex-organizations.html">
+   href="relevamiento.html">
 
 Read article →
+
+
 
 </a>
 
@@ -211,7 +211,7 @@ Read article →
 
 
 
-<article class="insight-item">
+<article class="insight-item" data-date="2026-07-15">
 
 
 <div class="insight-image">
@@ -262,7 +262,7 @@ Read article →
 
 
 
-<article class="insight-item">
+<article class="insight-item" data-date="2026-07-10">
 
 
 <div class="insight-image">
@@ -336,9 +336,33 @@ Read article →
 
 </footer>
 
+<script>
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const list = document.querySelector(".insights-list");
+
+    if (!list) return;
+
+    const items = Array.from(list.querySelectorAll(".insight-item"));
+
+    items.sort(function(a, b) {
+        return new Date(b.getAttribute("data-date")) - new Date(a.getAttribute("data-date"));
+    });
+
+    items.forEach(function(item) {
+        list.appendChild(item);
+    });
+
+});   
+
+</script>
+
+<!-- Script general del sitio -->
 
 <script src="../../js/app.js"></script>
+
+
 
 
 </body>
