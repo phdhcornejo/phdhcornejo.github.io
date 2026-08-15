@@ -12,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="canonical" href="https://phdhcornejo.github.io/es/reflexiones/">
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/styles.css">
@@ -158,9 +158,50 @@ en entornos complejos.
 
 <div class="insights-list">
 
+<article class="insight-item" data-date="2026-08-15">
+
+<div class="insight-image">
+
+<img src="../../images/artinews.png"
+     alt="Latest Global Business News">
+
+</div>
 
 
-<article class="insight-item">
+<div class="insight-content" data-date="2026-07-17">
+
+
+<h2>
+
+<a href="change-management-complex-organizations.html">
+
+Últimas noticias globales de negocios
+
+</a>
+
+</h2>
+
+
+<p>
+
+Bienvenido a su fuente de las últimas noticias empresariales globales, con información esencial, 
+tendencias emergentes, evolución de los mercados y perspectivas estratégicas que configuran el 
+mundo empresarial en rápida transformación.
+
+</p>
+
+
+<a class="insight-read-more"
+   href="relevamiento.html">
+
+Read article →
+
+
+
+</a>
+
+
+<article class="insight-item" data-date="2026-07-17">
 
 
 <div class="insight-image">
@@ -211,7 +252,7 @@ Leer artículo →
 
 
 
-<article class="insight-item">
+<article class="insight-item" data-date="2026-07-15">
 
 
 <div class="insight-image">
@@ -261,7 +302,7 @@ Leer artículo →
 
 
 
-<article class="insight-item">
+<article class="insight-item" data-date="2026-07-10">
 
 
 <div class="insight-image">
@@ -334,9 +375,34 @@ Leer artículo →
 
 </footer>
 
+<!-- Script que ordena automáticamente los artículos -->
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const list = document.querySelector(".insights-list");
+
+    if (!list) return;
+
+    const items = Array.from(list.querySelectorAll(".insight-item"));
+
+   items.sort(function(a, b) {
+    return new Date(b.getAttribute("data-date")) - new Date(a.getAttribute("data-date"));
+});
+
+   items.forEach(function(item) {
+    list.appendChild(item);
+	});
+});
+</script>
+
+
+<!-- Script general del sitio -->
 
 <script src="../../js/app.js"></script>
+
+
 
 
 </body>
